@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import quote
 @st.cache_resource
 def load_yield_model():
-   return joblib.load("ml_models/yield_model.pkl")
+   return joblib.load("models/yield_model_deployment.pkl")
 
 yield_model = load_yield_model()
 
